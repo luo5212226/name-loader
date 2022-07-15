@@ -1,0 +1,17 @@
+
+module.exports = (api) => {
+  api.cache(true);
+
+  return {
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          targets: {
+            node: "14.15.0",
+          },
+        },
+      ],
+    ],
+  };
+};
